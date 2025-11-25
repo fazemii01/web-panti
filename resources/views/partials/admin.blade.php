@@ -16,21 +16,21 @@
     <!-- [Favicon] icon -->
     <link rel="icon" href="{{ asset('asset/img/apple-touch-icon.png') }}" type="image/x-icon">
     <!-- map-vector css -->
-    <link rel="stylesheet" href="../assets/css/plugins/jsvectormap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/jsvectormap.min.css') }}">
     <!-- [Google Font : Poppins] icon -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fb034efa9e.js" crossorigin="anonymous"></script>
     <!-- [Tabler Icons] https://tablericons.com -->
-    <link rel="stylesheet" href="{{ asset('../assets/fonts/tabler-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/tabler-icons.min.css') }}">
     <!-- [Feather Icons] https://feathericons.com -->
-    <link rel="stylesheet" href="{{ asset('../assets/fonts/feather.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/feather.css') }}">
     <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
-    <link rel="stylesheet" href="{{ asset('../assets/fonts/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/fontawesome.css') }}">
     <!-- [Material Icons] https://fonts.google.com/icons -->
-    <link rel="stylesheet" href="{{ asset('../assets/fonts/material.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/material.css') }}">
     <!-- [Template CSS Files] -->
-    <link rel="stylesheet" href="{{ asset('../assets/css/style.css') }}" id="main-style-link">
-    <link rel="stylesheet" href="{{ asset('../assets/css/style-preset.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" id="main-style-link">
+    <link rel="stylesheet" href="{{ asset('assets/css/style-preset.css') }}">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
     {{-- Data tables --}}
@@ -156,7 +156,7 @@
                         <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown"
                             href="#" role="button" aria-haspopup="false" data-bs-auto-close="outside"
                             aria-expanded="false">
-                            <img src="../assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+                            <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image" class="user-avtar">
                         </a>
                         <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
                             <div class="dropdown-body">
@@ -213,12 +213,12 @@
     <script src="{{ asset('../assets/js/pages/dashboard-sales.js') }}"></script> --}}
     <!-- [Page Specific JS] end -->
     <!-- Required Js -->
-    <script src="{{ asset('../assets/js/plugins/popper.min.js') }}"></script>
-    <script src="{{ asset('../assets/js/plugins/simplebar.min.js') }}"></script>
-    <script src="{{ asset('../assets/js/plugins/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('../assets/js/fonts/custom-font.js') }}"></script>
-    <script src="{{ asset('../assets/js/pcoded.js') }}"></script>
-    <script src="{{ asset('../assets/js/plugins/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/fonts/custom-font.js') }}"></script>
+    <script src="{{ asset('assets/js/pcoded.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/feather.min.js') }}"></script>
 
 
 

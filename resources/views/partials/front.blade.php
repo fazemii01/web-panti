@@ -35,8 +35,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="{{ asset('asset/css/style.css') }}" rel="stylesheet" />
 
     <!-- Bootstrap CSS (sudah ada) -->
