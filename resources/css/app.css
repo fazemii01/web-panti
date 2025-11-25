@@ -59,7 +59,7 @@
 #hero {
     width: 100%;
     height: 100vh; /* Tinggi penuh sesuai viewport */
-    background-image: url("/asset/img/mccbg.png") no-repeat center center;
+    background: url("../img/mccbg.png") no-repeat center center;
     background-size: cover; /* Menyesuaikan gambar agar mencakup seluruh area */
     display: flex;
     align-items: center;
