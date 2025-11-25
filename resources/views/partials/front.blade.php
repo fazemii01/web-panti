@@ -53,52 +53,43 @@
                     
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="bi bi-list"></i>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <nav id="navbar" class="navbar ms-auto">
-                            <ul>
-                                <li><a class="nav-link scrollto " href="{{ route('beranda') }}">Beranda</a></li>
-                                <hr>
-                                <li><a class="nav-link scrollto" href="{{ url('/tentang-kami') }}">Tentang Kami</a></li>                
-                                <hr>
-                                <li><a class="nav-link" href="{{ route('anak-asuh') }}">Anak Asuh</a></li>
-                                <hr>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Donasi
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ route('rekening_donasi') }}">Rekening Donasi</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
-                                    </ul>
-                                </li>
-                                <hr>
-                                <li><a class="nav-link" href="{{ route('kepengurusan') }}">Kepengurusan</a></li>
-                                <hr>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Konten
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ route('show-blog') }}">Blog</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('galeri') }}">Galeri</a></li>
-                                    </ul>
-                                </li>
-                                <hr>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Kontak
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{ url('/contact') }}">Kontak</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('login') }}" style="color: blue;">Login admin</a></li>
-                                    </ul>
-                                </li>
-                                <hr>
-                            </ul>
-                        </nav>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link scrollto " href="{{ route('beranda') }}">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link scrollto" href="{{ url('/tentang-kami') }}">Tentang Kami</a></li>                
+                            <li class="nav-item"><a class="nav-link" href="{{ route('anak-asuh') }}">Anak Asuh</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Donasi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ route('rekening_donasi') }}">Rekening Donasi</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ route('kepengurusan') }}">Kepengurusan</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Konten
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ route('show-blog') }}">Blog</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('galeri') }}">Galeri</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Kontak
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{{ url('/contact') }}">Kontak</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('login') }}" style="color: blue;">Login admin</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
                 <!-- .navbar -->
