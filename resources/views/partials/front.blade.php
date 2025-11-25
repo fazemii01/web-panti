@@ -9,16 +9,11 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
+    <!-- DataTables CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
     <!-- Favicons -->
-    <link rel="shortcut icon" type="image/x-icon" href="/asset/img/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('asset/img/apple-touch-icon.png') }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 
     <!-- Google Fonts -->
     <link
@@ -37,12 +32,6 @@
     <!-- Template Main CSS File -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="{{ asset('asset/css/style.css') }}" rel="stylesheet" />
-
-    <!-- Bootstrap CSS (sudah ada) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -63,52 +52,54 @@
                     </a>
                     
 
-                    <nav id="navbar" class="navbar">
-                        <ul>
-                            <li><a class="nav-link scrollto " href="{{ route('beranda') }}">Beranda</a></li>
-                            <hr>
-                            <li><a class="nav-link scrollto" href="{{ url('/tentang-kami') }}">Tentang Kami</a></li>                
-                            <hr>
-                            <li><a class="nav-link" href="{{ route('anak-asuh') }}">Anak Asuh</a></li>
-                            <hr>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Donasi
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('rekening_donasi') }}">Rekening Donasi</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
-                                </ul>
-                            </li>
-                            <hr>
-                            <li><a class="nav-link" href="{{ route('kepengurusan') }}">Kepengurusan</a></li>
-                            <hr>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Konten
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ route('show-blog') }}">Blog</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('galeri') }}">Galeri</a></li>
-                                </ul>
-                            </li>
-                            <hr>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Kontak
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{{ url('/contact') }}">Kontak</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('login') }}" style="color: blue;">Login admin</a></li>
-                                </ul>
-                            </li>
-                            <hr>
-
-                        </ul>
-
-                        <i class="bi bi-list mobile-nav-toggle"></i>
-                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <nav id="navbar" class="navbar ms-auto">
+                            <ul>
+                                <li><a class="nav-link scrollto " href="{{ route('beranda') }}">Beranda</a></li>
+                                <hr>
+                                <li><a class="nav-link scrollto" href="{{ url('/tentang-kami') }}">Tentang Kami</a></li>                
+                                <hr>
+                                <li><a class="nav-link" href="{{ route('anak-asuh') }}">Anak Asuh</a></li>
+                                <hr>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Donasi
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ route('rekening_donasi') }}">Rekening Donasi</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('front.donasi.form') }}">Form Donasi</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('laporan_donasi') }}">Laporan Donasi</a></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li><a class="nav-link" href="{{ route('kepengurusan') }}">Kepengurusan</a></li>
+                                <hr>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Konten
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ route('show-blog') }}">Blog</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('galeri') }}">Galeri</a></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kontak
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="{{ url('/contact') }}">Kontak</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('login') }}" style="color: blue;">Login admin</a></li>
+                                    </ul>
+                                </li>
+                                <hr>
+                            </ul>
+                        </nav>
+                    </div>
                 </nav>
                 <!-- .navbar -->
             </div>
@@ -166,6 +157,7 @@
     <!-- Vendor JS Files -->
     <script src="{{ asset('asset/vendor/purecounter/purecounter_vanilla.js') }}"></script>
     <script src="{{ asset('asset/vendor/aos/aos.js') }}"></script>
+    <!-- Use Bootstrap 5 JS from vendor assets to match other assets -->
     <script src="{{ asset('asset/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('asset/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset('asset/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
@@ -174,6 +166,11 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('asset/js/main.js') }}"></script>
+
+    <!-- jQuery and DataTables (order: jQuery first) -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
     @stack('style')
     @stack('js')
 </body>

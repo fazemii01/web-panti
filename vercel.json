@@ -8,6 +8,7 @@
         { "src": "/asset/(.*)", "dest": "/public/asset/$1" },
         { "src": "/css/(.*)", "dest": "/public/css/$1" },
         { "src": "/js/(.*)", "dest": "/public/js/$1" },
+        { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
         { "src": "/images/blog/(.*)", "dest": "/public/images/blog/$1" },
         { "src": "/storage/(.*)", "dest": "/public/storage/$1" },
         { "src": "/build/(.*)", "dest": "/public/build/$1" },

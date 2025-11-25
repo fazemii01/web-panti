@@ -410,15 +410,13 @@ section {
     display: block;
   }
 
-  /* Sembunyikan table saat menu mobile aktif */
-  .navbar ul,
-  table {
+  /* Sembunyikan menu desktop saat mobile toggle aktif */
+  .navbar ul {
     display: none;
   }
 
-  /* Tampilkan table ketika menu mobile aktif */
-  .navbar-mobile.active ul,
-  .navbar-mobile.active + table {
+  /* Tampilkan menu mobile ketika aktif */
+  .navbar-mobile ul {
     display: block;
   }
 }
